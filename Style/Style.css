@@ -29,7 +29,6 @@ body{
   border-radius: 20px;
   padding-left: 20px;
   filter: grayscale(1) sepia(1) saturate(12) hue-rotate(250deg) brightness(0.5);
-
 }
 .colorChange{
   color: rgb(167, 91, 207)
@@ -37,7 +36,6 @@ body{
 .Title{
   font-family: 'Lexend Deca';
   font-size: 3em;
-  
 }
 .content{
   padding: 100px;
@@ -71,7 +69,6 @@ body{
   .mainContainer{
     display: block;
     width: 95%;
-    
   }
 
 }
