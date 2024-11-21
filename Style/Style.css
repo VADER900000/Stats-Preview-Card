@@ -2,73 +2,112 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital@1&display=swap');
 
-body{
+body {
   background-color: rgb(10, 12, 27);
+}
+
+.container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
-.mainContainer{
+
+.mainContainer {
   background-color: rgb(28, 25, 56);
   width: 80%;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
-  margin: 0px;
+  justify-content: space-around;
+  margin: auto;
+  padding-left: 40px;
 }
-.mainParagraph{
+
+.mainParagraph {
   color: white;
   width: 100%;
   margin: auto;
   padding-left: 10px;
-
 }
-.groupImage{
-  width: 100%;
+
+.groupImage {
+  min-width: 50%;
+  max-height: 100%;
+  filter: grayscale(1) sepia(1) saturate(12) hue-rotate(250deg) brightness(0.5);
   border-radius: 20px;
   padding-left: 20px;
-  filter: grayscale(1) sepia(1) saturate(12) hue-rotate(250deg) brightness(0.5);
 }
-.colorChange{
+
+.colorChange {
   color: rgb(167, 91, 207)
 }
-.Title{
+
+.Title {
   font-family: 'Lexend Deca';
   font-size: 3em;
+  
 }
-.content{
-  padding: 100px;
-  padding-top: 100px;
+
+.content {
+  padding: auto 100px;
+  display: flex;
+  justify-content: center;
   margin: 0px;
 }
-.paragraphyl{
+
+.paragraphyl {
   color: rgb(130, 128, 153);
   font-family: 'Inter';
   font-size: 2em;
 }
-.stats{
+
+.stats {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
   padding-bottom: 0px;
 }
-.stat{
+
+.stat {
   text-align: center;
 }
-.statNumber{
-  font-size: 2em; 
-  font-weight: bold; 
-  color: #fff; 
-  } 
-.statLabel{ 
+
+.statNumber {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.statLabel {
   font-size: 1.5em;
   color: rgb(124, 122, 147);
 }
+
 @media (max-width: 768px) {
-  .mainContainer{
-    display: block;
-    width: 95%;
+  .mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+  .Title{
+    font-size: 2em;
+  }
+  .paragraphyl{
+    font-size: 1.5em;
+  }
+  .statNumber{
+    font-size: 1.5em;
+  }
+  .statLabel{
+    font-size: 1.5em;
+  }
+  .groupImage{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px;
+    padding-bottom: 20px;
   }
 
 }
